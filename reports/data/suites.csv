@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Wed Nov 30 00:44:09 CST 2022","Wed Nov 30 00:45:21 CST 2022","71301","testsuites_new","test_010_gift_send_game","Test_Gift_Sent_Game","","","赠送游戏礼物",""

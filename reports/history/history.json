@@ -1,0 +1,22 @@
+{
+  "f177557be09270c56773bd96dbf929e2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a86ff08b27ab6f8c",
+      "status" : "broken",
+      "statusDetails" : "wda.exceptions.WDAElementNotFoundError: ('element not found', 'timeout 5.0')",
+      "time" : {
+        "start" : 1669740249799,
+        "stop" : 1669740321100,
+        "duration" : 71301
+      }
+    } ]
+  }
+}

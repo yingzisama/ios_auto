@@ -1,0 +1,30 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "testsuites_new",
+    "children" : [ {
+      "name" : "test_010_gift_send_game",
+      "children" : [ {
+        "name" : "Test_Gift_Sent_Game",
+        "children" : [ {
+          "name" : "赠送游戏礼物",
+          "uid" : "a86ff08b27ab6f8c",
+          "parentUid" : "7fafe77e4ceba37af6de0a443e2d2796",
+          "status" : "broken",
+          "time" : {
+            "start" : 1669740249799,
+            "stop" : 1669740321100,
+            "duration" : 71301
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "7fafe77e4ceba37af6de0a443e2d2796"
+      } ],
+      "uid" : "1296402cefbfde3e393a79fd523cb693"
+    } ],
+    "uid" : "9ce645e55721164e285dec635474a475"
+  } ]
+}

@@ -1,0 +1,247 @@
+{
+  "uid" : "a86ff08b27ab6f8c",
+  "name" : "赠送游戏礼物",
+  "fullName" : "testsuites_new.test_010_gift_send_game.Test_Gift_Sent_Game#test_audience_sentgift_game",
+  "historyId" : "f177557be09270c56773bd96dbf929e2",
+  "time" : {
+    "start" : 1669740249799,
+    "stop" : 1669740321100,
+    "duration" : 71301
+  },
+  "status" : "broken",
+  "statusMessage" : "wda.exceptions.WDAElementNotFoundError: ('element not found', 'timeout 5.0')",
+  "statusTrace" : "self = <testsuites_new.test_010_gift_send_game.Test_Gift_Sent_Game object at 0x0000020A9DFA8D90>\ninit_audience = <module.audience.Audience object at 0x0000020A9DFC01C0>\n\n    @allure.story('赠送游戏礼物')\n    @allure.title(\"赠送游戏礼物\")\n    def test_audience_sentgift_game(self, init_audience):\n        # 进入直播间\n        init_audience.enter_live_room()\n        # 充值12小象币\n        ele_function.add_bean(67)\n        # 打开礼物栏\n        init_audience.live_click_gift_button()\n        # 赠送热门-幸运钥匙\n        init_audience.live_click_game_gift()\n        # 关闭礼物栏\n        init_audience.close_gift()\n        # 查看象豆\n        init_audience.live_click_gift_button()\n        # 断言余额为11\n>       init_audience.assert_gift_bean_balance('57')\n\ntestsuites_new\\test_010_gift_send_game.py:38: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nmodule\\audience.py:203: in assert_gift_bean_balance\n    self.base.assert_xpath(ele_gift_bean,num)\nmodule\\base.py:69: in assert_xpath\n    real_num = self.d(xpath=label_name).get().value\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <wda.Selector object at 0x0000020A9E0080D0>, timeout = 5\nraise_error = True\n\n    def get(self, timeout=None, raise_error=True):\n        \"\"\"\n        Args:\n            timeout (float): timeout for query element, unit seconds\n                Default 10s\n            raise_error (bool): whether to raise error if element not found\n    \n        Returns:\n            Element: UI Element\n    \n        Raises:\n            WDAElementNotFoundError if raise_error is True else None\n        \"\"\"\n        start_time = time.time()\n        if timeout is None:\n            timeout = self._timeout\n        while True:\n            elems = self.find_elements()\n            if len(elems) > 0:\n                return elems[0]\n            if start_time + timeout < time.time():\n                break\n            time.sleep(0.5)\n    \n        if raise_error:\n>           raise WDAElementNotFoundError(\"element not found\",\n                                          \"timeout %.1f\" % timeout)\nE           wda.exceptions.WDAElementNotFoundError: ('element not found', 'timeout 5.0')\n\nC:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\wda\\__init__.py:1513: WDAElementNotFoundError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "init_audience",
+    "time" : {
+      "start" : 1669740249798,
+      "stop" : 1669740249798,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1669740241917,
+      "stop" : 1669740249798,
+      "duration" : 7881
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "wda.exceptions.WDAElementNotFoundError: ('element not found', 'timeout 5.0')",
+    "statusTrace" : "self = <testsuites_new.test_010_gift_send_game.Test_Gift_Sent_Game object at 0x0000020A9DFA8D90>\ninit_audience = <module.audience.Audience object at 0x0000020A9DFC01C0>\n\n    @allure.story('赠送游戏礼物')\n    @allure.title(\"赠送游戏礼物\")\n    def test_audience_sentgift_game(self, init_audience):\n        # 进入直播间\n        init_audience.enter_live_room()\n        # 充值12小象币\n        ele_function.add_bean(67)\n        # 打开礼物栏\n        init_audience.live_click_gift_button()\n        # 赠送热门-幸运钥匙\n        init_audience.live_click_game_gift()\n        # 关闭礼物栏\n        init_audience.close_gift()\n        # 查看象豆\n        init_audience.live_click_gift_button()\n        # 断言余额为11\n>       init_audience.assert_gift_bean_balance('57')\n\ntestsuites_new\\test_010_gift_send_game.py:38: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nmodule\\audience.py:203: in assert_gift_bean_balance\n    self.base.assert_xpath(ele_gift_bean,num)\nmodule\\base.py:69: in assert_xpath\n    real_num = self.d(xpath=label_name).get().value\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <wda.Selector object at 0x0000020A9E0080D0>, timeout = 5\nraise_error = True\n\n    def get(self, timeout=None, raise_error=True):\n        \"\"\"\n        Args:\n            timeout (float): timeout for query element, unit seconds\n                Default 10s\n            raise_error (bool): whether to raise error if element not found\n    \n        Returns:\n            Element: UI Element\n    \n        Raises:\n            WDAElementNotFoundError if raise_error is True else None\n        \"\"\"\n        start_time = time.time()\n        if timeout is None:\n            timeout = self._timeout\n        while True:\n            elems = self.find_elements()\n            if len(elems) > 0:\n                return elems[0]\n            if start_time + timeout < time.time():\n                break\n            time.sleep(0.5)\n    \n        if raise_error:\n>           raise WDAElementNotFoundError(\"element not found\",\n                                          \"timeout %.1f\" % timeout)\nE           wda.exceptions.WDAElementNotFoundError: ('element not found', 'timeout 5.0')\n\nC:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\wda\\__init__.py:1513: WDAElementNotFoundError",
+    "steps" : [ {
+      "name" : "进入直播间",
+      "time" : {
+        "start" : 1669740249799,
+        "stop" : 1669740287678,
+        "duration" : 37879
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "打开礼物面板",
+      "time" : {
+        "start" : 1669740287848,
+        "stop" : 1669740291411,
+        "duration" : 3563
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "赠送游戏礼物-幸运钥匙",
+      "time" : {
+        "start" : 1669740291411,
+        "stop" : 1669740311068,
+        "duration" : 19657
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "关闭礼物面板",
+      "time" : {
+        "start" : 1669740311068,
+        "stop" : 1669740313887,
+        "duration" : 2819
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "打开礼物面板",
+      "time" : {
+        "start" : 1669740313887,
+        "stop" : 1669740315308,
+        "duration" : 1421
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "断言礼物栏-象豆余额",
+      "time" : {
+        "start" : 1669740315309,
+        "stop" : 1669740321099,
+        "duration" : 5790
+      },
+      "status" : "broken",
+      "statusMessage" : "wda.exceptions.WDAElementNotFoundError: ('element not found', 'timeout 5.0')\n",
+      "statusTrace" : "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\allure_commons\\_allure.py\", line 192, in impl\n    return func(*a, **kw)\n  File \"E:\\ele_workspace\\ios_auto\\module\\audience.py\", line 203, in assert_gift_bean_balance\n    self.base.assert_xpath(ele_gift_bean,num)\n  File \"E:\\ele_workspace\\ios_auto\\module\\base.py\", line 69, in assert_xpath\n    real_num = self.d(xpath=label_name).get().value\n  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\wda\\__init__.py\", line 1513, in get\n    raise WDAElementNotFoundError(\"element not found\",\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "num",
+        "value" : "'57'"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "ef0dc7319f2429d4",
+      "name" : "log",
+      "source" : "ef0dc7319f2429d4.txt",
+      "type" : "text/plain",
+      "size" : 951
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 6,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "init_audience::0",
+    "time" : {
+      "start" : 1669740321175,
+      "stop" : 1669740321175,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "driver_setup::driver_teardown",
+    "time" : {
+      "start" : 1669740321176,
+      "stop" : 1669740322935,
+      "duration" : 1759
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "赠送游戏礼物"
+  }, {
+    "name" : "feature",
+    "value" : "送礼-游戏礼物"
+  }, {
+    "name" : "epic",
+    "value" : "送礼-游戏礼物"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('driver_setup')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testsuites_new"
+  }, {
+    "name" : "suite",
+    "value" : "test_010_gift_send_game"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Gift_Sent_Game"
+  }, {
+    "name" : "host",
+    "value" : "WIN-ARSJMJG0IBM"
+  }, {
+    "name" : "thread",
+    "value" : "21972-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testsuites_new.test_010_gift_send_game"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "@pytest.mark.usefixtures('driver_setup')" ]
+  },
+  "source" : "a86ff08b27ab6f8c.json",
+  "parameterValues" : [ ]
+}

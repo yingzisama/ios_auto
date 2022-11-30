@@ -1,0 +1,11 @@
+[ {
+  "uid" : "a86ff08b27ab6f8c",
+  "name" : "赠送游戏礼物",
+  "time" : {
+    "start" : 1669740249799,
+    "stop" : 1669740321100,
+    "duration" : 71301
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

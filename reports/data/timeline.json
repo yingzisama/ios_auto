@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "WIN-ARSJMJG0IBM",
+    "children" : [ {
+      "name" : "21972-MainThread",
+      "children" : [ {
+        "name" : "赠送游戏礼物",
+        "uid" : "a86ff08b27ab6f8c",
+        "parentUid" : "5b885636b629aa4bcfba65a694724eab",
+        "status" : "broken",
+        "time" : {
+          "start" : 1669740249799,
+          "stop" : 1669740321100,
+          "duration" : 71301
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5b885636b629aa4bcfba65a694724eab"
+    } ],
+    "uid" : "b34a51f1b0182654e886c3eb0e4b0ec2"
+  } ]
+}
