@@ -5,6 +5,7 @@ from tools.loggers import JFMlogging
 import allure
 from module.audience import Audience
 from tools.ele_function import ele_function
+import time
 logger = JFMlogging().getloger()
 
 @pytest.mark.usefixtures('driver_setup')
@@ -30,12 +31,13 @@ class Test_Gift_Sent_Game:
         init_audience.live_click_gift_button()
         # 赠送热门-幸运钥匙
         init_audience.live_click_game_gift()
-        # 关闭礼物栏
-        init_audience.close_gift()
-        # 查看象豆
-        init_audience.live_click_gift_button()
-        # 断言余额为11
-        init_audience.assert_gift_bean_balance('57')
+        # # 关闭礼物栏
+        # init_audience.close_gift()
+        # # 查看象豆
+        # init_audience.live_click_gift_button()
+        # time.sleep(1)
+        # 断言余额为57
+        init_audience.assert_gift_bean_balance(57)
         # 关闭礼物栏面板
         # self.base.back()
         # # 断言评论区出现送礼消息

@@ -74,10 +74,10 @@ class Base(object):
         """
         断言label元素存在
         label_name:元素名称
-        log_text:打印log的文案
         :return:
         """
-        assert self.d(label=label_name).exists() == True, "断言「{}」元素存在,失败了!".format(label_name)
+        time.sleep(0.5)
+        assert self.d(label=label_name).exists == True, "断言「{}」元素存在,失败了!".format(label_name)
         logger.info("断言「{}」元素存在,成功了!".format(label_name))
 
     def swipe_xy(self,x1,y1,x2,y2):

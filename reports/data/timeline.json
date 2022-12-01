@@ -2,25 +2,29 @@
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "name" : "timeline",
   "children" : [ {
-    "name" : "WIN-ARSJMJG0IBM",
+    "name" : "psnopc",
     "children" : [ {
-      "name" : "21972-MainThread",
+      "name" : "22896-MainThread",
       "children" : [ {
-        "name" : "赠送游戏礼物",
-        "uid" : "a86ff08b27ab6f8c",
-        "parentUid" : "5b885636b629aa4bcfba65a694724eab",
-        "status" : "broken",
+        "name" : "点击首页banner",
+        "uid" : "495fbf2d28bba074",
+        "parentUid" : "f32033d0fbe8b1888bc0df1d520dec52",
+        "status" : "passed",
         "time" : {
-          "start" : 1669740249799,
-          "stop" : 1669740321100,
-          "duration" : 71301
+          "start" : 1669882175320,
+          "stop" : 1669882183693,
+          "duration" : 8373
         },
         "flaky" : false,
         "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "5b885636b629aa4bcfba65a694724eab"
+      "uid" : "f32033d0fbe8b1888bc0df1d520dec52"
     } ],
-    "uid" : "b34a51f1b0182654e886c3eb0e4b0ec2"
+    "uid" : "6d0a66e85e40290317453efd15256ca5"
   } ]
 }

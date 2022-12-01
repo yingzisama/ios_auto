@@ -2,29 +2,33 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "送礼-游戏礼物",
+    "name" : "点击-banner",
     "children" : [ {
-      "name" : "送礼-游戏礼物",
+      "name" : "点击-banner",
       "children" : [ {
-        "name" : "赠送游戏礼物",
+        "name" : "点击首页banner",
         "children" : [ {
-          "name" : "赠送游戏礼物",
-          "uid" : "a86ff08b27ab6f8c",
-          "parentUid" : "9c51c54ea1047a0aabbea9b30328ca3f",
-          "status" : "broken",
+          "name" : "点击首页banner",
+          "uid" : "495fbf2d28bba074",
+          "parentUid" : "92f4b9fdd1d3abfa3a91746e6c33807d",
+          "status" : "passed",
           "time" : {
-            "start" : 1669740249799,
-            "stop" : 1669740321100,
-            "duration" : 71301
+            "start" : 1669882175320,
+            "stop" : 1669882183693,
+            "duration" : 8373
           },
           "flaky" : false,
           "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
           "parameters" : [ ]
         } ],
-        "uid" : "9c51c54ea1047a0aabbea9b30328ca3f"
+        "uid" : "92f4b9fdd1d3abfa3a91746e6c33807d"
       } ],
-      "uid" : "f6c7d6fdd46ea2931accca3d2c4307b2"
+      "uid" : "67ce7fbee16736ec9e92ddb6731a15be"
     } ],
-    "uid" : "047409b963c0b4bbbcd2fd7ae31101ee"
+    "uid" : "56dc3c471db3953f6d2ee73dc8fa81e7"
   } ]
 }

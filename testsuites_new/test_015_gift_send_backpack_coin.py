@@ -31,7 +31,7 @@ class Test_Gift_Sent:
         # 赠送背包-象币礼物
         init_audience.live_click_backpack_coin_gift()
         # 断言余额为90
-        init_audience.assert_gift_balance('111')
+        init_audience.assert_gift_bean_balance('111')
         # 关闭礼物栏面板
         # self.base.back()
         # # 断言评论区出现送礼消息

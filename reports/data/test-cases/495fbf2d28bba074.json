@@ -1,0 +1,208 @@
+{
+  "uid" : "495fbf2d28bba074",
+  "name" : "点击首页banner",
+  "fullName" : "testsuites_new.test_017_banner_click.Test_Banner_Click#test_click_banner",
+  "historyId" : "0e508b36b39382cd2c59a47567e24449",
+  "time" : {
+    "start" : 1669882175320,
+    "stop" : 1669882183693,
+    "duration" : 8373
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1669882171830,
+      "stop" : 1669882171940,
+      "duration" : 110
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1669882171940,
+      "stop" : 1669882175319,
+      "duration" : 3379
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "init_audience",
+    "time" : {
+      "start" : 1669882175319,
+      "stop" : 1669882175319,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "点击发现-越南",
+      "time" : {
+        "start" : 1669882175321,
+        "stop" : 1669882179018,
+        "duration" : 3697
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击banner",
+      "time" : {
+        "start" : 1669882179018,
+        "stop" : 1669882181962,
+        "duration" : 2944
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "断言-当前在直播间内",
+      "time" : {
+        "start" : 1669882181963,
+        "stop" : 1669882183693,
+        "duration" : 1730
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "571e0beff66d0b32",
+      "name" : "log",
+      "source" : "571e0beff66d0b32.txt",
+      "type" : "text/plain",
+      "size" : 813
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "init_audience::0",
+    "time" : {
+      "start" : 1669882183694,
+      "stop" : 1669882183694,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver_setup::driver_teardown",
+    "time" : {
+      "start" : 1669882183695,
+      "stop" : 1669882184794,
+      "duration" : 1099
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "点击首页banner"
+  }, {
+    "name" : "feature",
+    "value" : "点击-banner"
+  }, {
+    "name" : "epic",
+    "value" : "点击-banner"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('driver_setup')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testsuites_new"
+  }, {
+    "name" : "suite",
+    "value" : "test_017_banner_click"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Banner_Click"
+  }, {
+    "name" : "host",
+    "value" : "psnopc"
+  }, {
+    "name" : "thread",
+    "value" : "22896-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testsuites_new.test_017_banner_click"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.usefixtures('driver_setup')" ]
+  },
+  "source" : "495fbf2d28bba074.json",
+  "parameterValues" : [ ]
+}

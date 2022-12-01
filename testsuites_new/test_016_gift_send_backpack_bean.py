@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# 自动化测试用例: 从礼物面板赠送背包-象币礼物
+# 自动化测试用例: 从礼物面板赠送背包-象豆礼物
 import pytest
 from tools.loggers import JFMlogging
 import allure
@@ -28,8 +28,8 @@ class Test_Gift_Sent:
         ele_function.add_coin(111)
         # 打开礼物栏
         init_audience.live_click_gift_button()
-        # 赠送背包-象币礼物
-        init_audience.live_click_backpack_coin_gift()
+        # 赠送背包-象豆礼物
+        init_audience.live_click_backpack_bean_gift()
         # 断言余额为90
         init_audience.assert_gift_bean_balance('111')
         # 关闭礼物栏面板

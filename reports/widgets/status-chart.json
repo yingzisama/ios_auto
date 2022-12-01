@@ -1,11 +1,11 @@
 [ {
-  "uid" : "a86ff08b27ab6f8c",
-  "name" : "赠送游戏礼物",
+  "uid" : "495fbf2d28bba074",
+  "name" : "点击首页banner",
   "time" : {
-    "start" : 1669740249799,
-    "stop" : 1669740321100,
-    "duration" : 71301
+    "start" : 1669882175320,
+    "stop" : 1669882183693,
+    "duration" : 8373
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "normal"
 } ]
