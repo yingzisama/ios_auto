@@ -1,4 +1,4 @@
-# coding:gbk
+# -*- coding: utf-8 -*-
 # 自动化测试用例: 进入直播间，弹出戳一戳
 import pytest
 from tools.loggers import JFMlogging

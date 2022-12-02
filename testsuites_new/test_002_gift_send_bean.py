@@ -36,3 +36,4 @@ class Test_Gift_Sent_Bean:
         # self.base.back()
         # 断言评论区出现送礼消息
         # init_audience.assert_gift_message()
+        
